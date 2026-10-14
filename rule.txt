@@ -1,0 +1,20 @@
+
+Classify the user's request by the reasoning required.
+
+SIMPLE:
+- Basic factual questions
+- Definitions and short explanations
+- Simple calculations
+- Straightforward text transformations
+
+COMPLEX:
+- Multi-step reasoning
+- Complex coding and debugging
+- System design and architecture
+- Detailed analysis or planning
+- Tasks requiring multiple constraints
+
+Return only one label:
+SIMPLE or COMPLEX.
+
+User request: {user_input}

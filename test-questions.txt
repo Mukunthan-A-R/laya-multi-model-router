@@ -1,0 +1,31 @@
+Simple questions — expected: SIMPLE
+
+1. What is Python?
+2. What is the difference between a list and a tuple?
+3. Explain RAG in simple terms.
+4. What is the capital of Japan?
+5. Write a Python function to reverse a string.
+6. Convert 25 Celsius to Fahrenheit.
+7. Summarize the benefits of drinking water in three bullet points.
+
+
+
+Complex questions — expected: COMPLEX
+
+1. Design a scalable RAG application with hybrid search, reranking, evaluation, and failure recovery.
+2. Debug a production RAG pipeline that returns irrelevant documents despite using embeddings. Identify possible root causes and propose a systematic debugging strategy.
+3. Design a multi-agent system using LangGraph that delegates tasks to specialized agents, handles tool failures, and maintains shared state.
+4. Compare dense retrieval, BM25, and hybrid search. Explain how to combine them with reciprocal rank fusion and reranking.
+5. Design a scalable backend architecture for a project management application with authentication, task dependencies, notifications, and concurrent updates.
+6. Write a Python implementation of a retry mechanism with exponential backoff, timeout handling, and unit tests.
+7. Design an evaluation framework for a RAG system using retrieval metrics, answer faithfulness, latency, and cost. Explain how you would diagnose regressions.
+
+
+
+Test 1 · SIMPLE
+Input: What is the difference between a list and a tuple in Python?
+Expected route: Laya → SIMPLE → Groq
+
+Test 2 · COMPLEX
+Input: Design a production-ready RAG system using hybrid retrieval, reranking, query rewriting, evaluation metrics, and fallback handling. Explain the architecture and implementation step by step.
+Expected route: Laya → COMPLEX → Gemini
